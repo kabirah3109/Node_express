@@ -35,7 +35,7 @@ import fetch from "node-fetch";
 
 const app = express();
 
-app.use(express.static("./public"));
+app.use(express.static(__dirname +"./public"));
 
 const requireTime = (req, res, next) => {
   const now = new Date();
