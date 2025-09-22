@@ -54,7 +54,7 @@ app.get("/time", (req, res) => {
     <body>
       <h1>Hello world</h1>
       <p>The Time is: ${req.requireTime}</p>
-      <p><a href="/">Go Home</a></p>
+      <p><a href="/home">Go Home</a></p>
     </body>
     </html>
   `);
