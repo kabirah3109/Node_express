@@ -44,6 +44,9 @@ const requireTime = (req, res, next) => {
 };
 
 app.use(requireTime);
+app.get("/home", (req, res) => {
+  res.sendFile("./index.html",);
+});
 
 app.get("/time", (req, res) => {
   res.send(`
