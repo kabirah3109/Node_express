@@ -45,13 +45,13 @@ const requireTime = (req, res, next) => {
 
 app.use(requireTime);
 app.get("/home", (req, res) => {
-  res.sendFile("./index.html",);
+  res.sendFile("./index.html" , { root: "." });
 });
 
 app.get("/time", (req, res) => {
   res.send(`
 
-       <!DOCTYPE html>
+    <!DOCTYPE html>
     <html>
     <head><title>Server Time</title></head>
     <body>
